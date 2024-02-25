@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-header{
+    width: 80%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-lista ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header-lista ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+.header-lista ul li a:hover{
+    color: yellow;
+}
+
+.button-get{
+ border: none;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.button-get a{
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: 0.25s;
+}
+
+.button-get a:hover{
+    background-color: white;
+}
+
+main{
+    width: 100%;
+}
+
+.text-start{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+
+.text-start h2{
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.text-start p{
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.icons{
+    padding:50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-pages{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.spense{
+    width: 45%;
+}
+
+.helpcamp{
+    width: 45%;
+    
+}
+
+.img-pages h2{
+    font-weight:400;
+    font-size: 2rem;
+    padding: 15px 0px;
+}
+
+.text-cinza{
+    background-color: rgb(56, 54, 54);
+    
+}
+
+.div-cinza{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lado-esquerdo{
+    width: 45%;
+}
+
+.lado-direito{
+    width: 45%;
+}
+
+.lado-esquerdo h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.lado-esquerdo p, .lado-direito p{
+    padding: 10px 0;
+}
+
+.interested{
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.interested .contact-email{
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.h2-titulo h2{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.contact-email p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-email a{
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(56, 54, 54);
+    color: white;
+}
+
+.footer-center{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.footer-center img{
+    padding: 0px 5px;
+}
+
+/*responsivo tablet */
+
+@media (max-width: 915px){
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .button-get{
+        margin-top: 10px;
+    }
+
+    .hamburguer{
+        display: none;
+    }
+
+    .text-start h2{
+        font-size: 2rem;
+    }
+    
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .icons img{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-pages{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .spense{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .helpcamp{
+        width: 100%;
+    }
+    .div-cinza{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lado-esquerdo{
+        width: 100%;
+    }
+    
+    .lado-direito{
+        width: 100%;
+    }
+}
+
+
+/*responsivo celular*/
+/*alteracao de 414 para 415*/
+@media (max-width: 415px){
+
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .header-lista{
+        display: none;
+    }
+    .button-get{
+        display: none;
+    }
+
+    .hamburguer{
+        display: flex;
+    }
+    .hamburguer a{
+        color: white;
+    }
+
+    .footer-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
