@@ -227,7 +227,9 @@ main{
     color: black;
     border: none;
 }
-
+.voltar:hover{
+    background-color: rgb(178, 178, 178);
+}
 /*responsivo tablet */
 
 @media (max-width: 915px){
