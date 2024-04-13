@@ -10,7 +10,7 @@
     <title>Jhonatan Spacter</title>
 </head>
 <body>
-    <header class="main-header">
+    <!-- <header class="main-header">
         <div class="logo">
             <a>Jhonatan Specter</a>
         </div>
@@ -24,11 +24,28 @@
         </div>
         <div class="button-get">
             <a href="#" target="_blank">Get in touch</a>
+        </div> -->
+        <div class="container">
+            <div class="logo">
+                <a href="#">Jhonatan Specter</a>
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <div class="button-get">
+                <a href="#" target="_blank">Get in touch</a>
+            </div>
         </div>
-        <div class="hamburguer">
-            <a href="#"><img src="Assets/linhas.png" alt="opsões menu" width="30px"></a>
-        </div>
-
     </header>
     <main>
         <section class="text-start">
@@ -96,6 +113,29 @@
                 <a href="#" target="_blank"><img src="Assets/Social Icons/LinkedIn.svg" alt=""></a>
                 <a href="#" target="_blank"><img src="Assets/Social Icons/Github.svg" alt=""></a>
             </div>
-        </div> 
+        </div>
+    </footer> 
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('.nav-links li');
+      
+        burger.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+      
+          // Burger Animation
+          burger.classList.toggle('toggle');
+        });
+      
+        // Fechar o menu ao clicar em qualquer lugar da tela
+        document.addEventListener('click', function(event) {
+          const isClickInsideNav = nav.contains(event.target);
+          const isClickInsideBurger = burger.contains(event.target);
+          if (!isClickInsideNav && !isClickInsideBurger) {
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+          }
+        });
+      </script>   
 </body>
 </html>
