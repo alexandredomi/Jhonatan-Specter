@@ -37,12 +37,6 @@ body{
     flex-direction: column;
     gap: 5px;
 }
-/* .burger .line1, .line2 , .line3{
-    background-color: white;
-    height: 5px; 
-    width: 30px;
-    border-radius: 3px;
-} */
 .line1, .line2, .line3 {
     width: 35px;
     height: 4px;
@@ -212,7 +206,7 @@ main{
         align-items: center;
         justify-content: center;
         height: auto;
-        width: 100vh;
+        width: 100%;
         position: absolute;
         top: 90px;
         left: 0px;
